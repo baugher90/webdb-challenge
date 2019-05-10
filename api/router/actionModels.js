@@ -14,8 +14,8 @@ function find() {
 function findById(id) {
   return db(`actions`).where({ id });
 }
-function add(track) {
-  return db(`actions`).insert(track, `id`);
+function add(action) {
+  return db(`actions`).insert(action, `id`);
 }
 function update(id, changes) {
   return db(`actions`)
